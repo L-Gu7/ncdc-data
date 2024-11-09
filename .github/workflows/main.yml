@@ -16,7 +16,7 @@ jobs:
         uses: patrickwyler/gcs-bucket-sync-action@1.4
         with:
           secrets: ${{ secrets.google_service_account_credentials }}
-          bucket: 'data-bucket'
+          bucket: 'gth-data-bucket'
           sync_dir_from: /data
           sync_dir_to: /temp-data
           exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$'
