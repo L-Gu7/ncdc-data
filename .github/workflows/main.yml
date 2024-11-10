@@ -18,5 +18,5 @@ jobs:
           secrets: ${{ secrets.google_service_account_credentials }}
           bucket: 'gth-data-bucket'
           sync_dir_from: /data
-          sync_dir_to: /temp-data
+          sync_dir_to: temp-data
           exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$'
